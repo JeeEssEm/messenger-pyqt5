@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Мессенджер</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #212121;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #36393f;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="1" column="1">
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <property name="bottomMargin">
+         <number>25</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="users">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="welcome">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;</string>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="styleSheet">
+           <string notr="true">QTabWidget::pane {
+border: 1px solid #5865f2;
+color: #fff;
+}
+
+QTabBar::tab:selected{
+background-color: #5865f2;
+}
+
+QTabBar::tab{
+color: #fff;
+background-color: #23272a;
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Друзья</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QListWidget" name="profiles">
+              <property name="styleSheet">
+               <string notr="true">QListWidget{
+border: 0px solid #212121;
+}
+
+QListWiget::item:hover{
+background-color: #393c42;
+}
+
+
+ QScrollBar:vertical {
+     background: transparent;
+     width: 15px;
+     margin: 22px 0 22px 0;
+ }
+ QScrollBar::handle:vertical {
+     background: #4a4d52;
+     max-width: 2px;
+     min-height: 40px;
+	border-radius: 5%;
+ }
+ QScrollBar::add-line:vertical {
+     background: transparent;
+    max-height: 0px;
+
+ }
+
+ QScrollBar::sub-line:vertical {
+     background: transparent;
+	max-height: 0px;
+
+ }
+
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+
+  QScrollBar:horizontal {
+     background: transparent;
+     width: 15px;
+     margin: 22px 0 22px 0;
+ }
+ QScrollBar::handle:horizontal {
+     background: #4a4d52;
+     max-width: 2px;
+     min-height: 40px;
+	border-radius: 5%;
+ }
+ QScrollBar::add-line:horizontal {
+     background: transparent;
+    max-height: 0px;
+
+ }
+
+ QScrollBar::sub-line:horizontal {
+     background: transparent;
+	max-height: 0px;
+
+ }
+
+
+ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+     background: none;
+ }
+</string>
+              </property>
+              <property name="sortingEnabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>Поиск</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <widget class="QLineEdit" name="search_form">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #2f2f2f;
+border-radius: 25px 25px 25px 25px;
+color: #fff;
+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="search_btn">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #6f6f6f;
+font-size: 16px;
+font-family: &quot;Roboto&quot;,-apple-system,apple color emoji,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,sans-serif;
+color: #fff;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QRadioButton" name="local_s">
+                    <property name="styleSheet">
+                     <string notr="true">color: #fff;</string>
+                    </property>
+                    <property name="text">
+                     <string>Локальный</string>
+                    </property>
+                    <property name="checked">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="global_s">
+                    <property name="styleSheet">
+                     <string notr="true">color: #fff;</string>
+                    </property>
+                    <property name="text">
+                     <string>Глобальный</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QListWidget" name="search_results">
+                <property name="styleSheet">
+                 <string notr="true">border: 0px solid transparent;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Запросы в друзья</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QListWidget" name="friend_requests">
+              <property name="styleSheet">
+               <string notr="true">border: 0px solid transparent;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QGridLayout" name="mms" rowstretch="0" rowminimumheight="0">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item row="0" column="0">
+         <widget class="QListView" name="listView">
+          <property name="styleSheet">
+           <string notr="true">background-color: transparent;
+border: 0px solid transparent;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

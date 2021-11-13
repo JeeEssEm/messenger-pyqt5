@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Auth</class>
+ <widget class="QWidget" name="Auth">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Авторизация</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#363940</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #fff</string>
+     </property>
+     <property name="text">
+      <string>Добро пожаловать</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">color: #797c83;</string>
+     </property>
+     <property name="text">
+      <string>ЛОГИН:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="login">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #323338;
+border: 2px solid #37383d;
+color: #fff</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">color: #797c83;</string>
+     </property>
+     <property name="text">
+      <string>ПАРОЛЬ:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="password">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #323338;
+border: 2px solid #37383d;
+color: #fff;</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="forget_pass">
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #5865f2;
+background-color: transparent;</string>
+     </property>
+     <property name="text">
+      <string>Забыли пароль?</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="enter">
+     <property name="styleSheet">
+      <string notr="true">background-color: #5865f2;
+color: #fff;</string>
+     </property>
+     <property name="text">
+      <string>Войти</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="create_acc">
+     <property name="styleSheet">
+      <string notr="true">color: #5865f2;
+background-color: transparent;</string>
+     </property>
+     <property name="text">
+      <string>Зарегистрироваться</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="status">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
